@@ -1,0 +1,38 @@
+{
+  "name": "ionic4-tooltips",
+  "version": "2.0.0",
+  "description": "Tooltips module for Ionic 2+ and Angular 8+ apps",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrquick17/ionic4-tooltips"
+  },
+  "authors": [
+    {
+      "name": "Ibby Hadeed",
+      "email": "<ibby@zyra.ca>"
+    },
+    {
+      "name": "Jeremy Quick",
+      "email": "<me@jrquick.com>"
+    }
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": ">=8.00",
+    "@angular/core": ">=8.00",
+    "@ionic/angular": "*"
+  },
+  "main": "bundles/ionic4-tooltips.umd.js",
+  "module": "fesm5/ionic4-tooltips.js",
+  "es2015": "fesm2015/ionic4-tooltips.js",
+  "esm5": "esm5/ionic4-tooltips.js",
+  "esm2015": "esm2015/ionic4-tooltips.js",
+  "fesm5": "fesm5/ionic4-tooltips.js",
+  "fesm2015": "fesm2015/ionic4-tooltips.js",
+  "typings": "ionic4-tooltips.d.ts",
+  "metadata": "ionic4-tooltips.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
