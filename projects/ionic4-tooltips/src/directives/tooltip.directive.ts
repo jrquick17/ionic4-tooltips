@@ -172,9 +172,9 @@ export class TooltipDirective implements OnInit, AfterViewInit, OnDestroy {
           if (this.arrow) {
             let arrowPosition;
             if (this.positionV === 'top') {
-              arrowPosition = 'bottom';
+              arrowPosition = this.positionH === 'center' ? 'bottom-center' : 'bottom';
             } else if (this.positionV === 'bottom') {
-              arrowPosition = 'top';
+              arrowPosition = this.positionH === 'center' ? 'top-center' : 'top';
             } else if (this.positionH === 'left') {
               arrowPosition = 'right';
             } else {
@@ -249,6 +249,8 @@ export class TooltipDirective implements OnInit, AfterViewInit, OnDestroy {
     } else if (this.positionH === 'left') {
       positionLeft = rect.left - spacing - tooltipNativeElement.offsetWidth;
       // -79, 19
+    } else if (this.positionH === 'center') {
+      positionLeft = rect.left - (tooltipNativeElement.offsetWidth - el.offsetWidth) / 2; 
     } else if (this.navTooltip) {
       positionLeft = rect.left + el.offsetWidth / 2;
     } else {
